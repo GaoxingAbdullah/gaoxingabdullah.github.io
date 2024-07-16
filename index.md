@@ -24,9 +24,9 @@ Clinical Decision Support: Learn about AI assisting healthcare professionals wi
 
 
 ## News
-<li><strong>[April. 2024]</strong> Me and my team won The First 2024 College of Computer Science and Technology International students Hackathon, ZJNU</li>
+-  <strong>[April. 2024]</strong> Me and my team won The First 2024 College of Computer Science and Technology International students Hackathon, ZJNU
 
-<br>
+
 {% include_relative _includes/publications.md %}
 
-<!-- {% include_relative _includes/services.md %} -->
+<!--{% include_relative _includes/services.md %}-->
