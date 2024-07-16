@@ -1,13 +1,8 @@
 main:
 
-  - title: MA-IOMT Mutual Authentication Protocol for Internet of Medical Things.
+  - title: QRMA-IOMT- Quantum-Resilient Mutual Authentication for IoMT Using RLWE and Boneh-Boney Signature.
     authors: <strong> Abdulai Yakubu</strong>, Ma Maode, Wang Hui* (*Corresponding authors)
-    # conference_short: MICCAI
-    # conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    # pdf: https://arxiv.org/pdf/2306.00988.pdf
-    # code: https://github.com/MrGiovanni/ContinualLearning
-    # bibtex: https://bib.yliu.me/MICCAI23.txt
-    # image: ./assets/img/teaser_example_2.png
+    image: ./assets/img/updated-model.png
     notes: Under review 
 
   # - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
