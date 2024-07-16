@@ -1,17 +1,17 @@
 main:
 
-  - title: QRMA-IOMT- Quantum-Resilient Mutual Authentication for IoMT Using RLWE and Boneh-Boney Signature.
+  - title: "QRMA-IOMT: Quantum-Resilient Mutual Authentication for IoMT Using RLWE and Boneh-Boney Signature"
     authors: <strong> Abdulai Yakubu</strong>, Ma Maode, Wang Hui* (*Corresponding authors)
     image: ./assets/img/updated-model.png
     notes: Under review 
 
-  # - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-  #   authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-  #   conference_short: CVPR
-  #   conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-  #   pdf: https://arxiv.org/pdf/2002.10211.pdf
-  #   code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-  #   page: https://class-il.mpi-inf.mpg.de/mnemonics/
-  #   bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-  #   notes: Oral Presentation
-  #   image: ./assets/img/teaser_example.png
+  - title: "ESMA-IOMT: Efficient and Secure Mutual Authentication in IoMT with RLWE-Based Encryption and Boneh-Boney Signatures" 
+    authors: <strong> Abdulai Yakubu</strong>, Ma Maode, Wang Hui* (*Corresponding authors)
+    conference_short: HEALTHCOM-2024
+    # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
+    # pdf: https://arxiv.org/pdf/2002.10211.pdf
+    # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
+    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    notes: under review 
+    image: ./assets/img/teaser_example.png
