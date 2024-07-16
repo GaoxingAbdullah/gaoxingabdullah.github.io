@@ -2,6 +2,7 @@ main:
 
   - title: "QRMA-IOMT: Quantum-Resilient Mutual Authentication for IoMT Using RLWE and Boneh-Boney Signature"
     authors: <strong> Abdulai Yakubu</strong>, Ma Maode, Wang Hui* (*Corresponding authors)
+    conference_short: IOMT2024
     image: ./assets/img/updated-model.png
     notes: Under review 
 
