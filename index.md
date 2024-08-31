@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am currently a second-year Master's student in Software Engineering at Zhejiang Normal University, 
+I am a final year Master's student in Software Engineering at Zhejiang Normal University, 
  where I have the privilege of being mentored and guided by Professor Wang (Robert) Hui. 
 Prior to pursuing my Master's degree, I obtained my Bachelor's in Computer Science 
 from the same university.
