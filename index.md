@@ -20,7 +20,9 @@ Internet of Medical Things (IoMT) under the mentorship of Professor Ma Maode and
 - **IoMT:** AI for Internet of Medical Things 
 - **AI for Healthcare:** Predictive Modeling: Understand how AI can predict disease risks, patient outcomes, and resource needs.
 Clinical Decision Support: Learn about AI assisting healthcare professionals with diagnosis, treatment selection, and patient management.
-- **Federated Learning**
+- **Federated Learning** 
+- **Internet of Things**
+- **Cyber Physical Systems**
 
 
 ## News
