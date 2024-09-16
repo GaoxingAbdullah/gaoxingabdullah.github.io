@@ -28,7 +28,7 @@ Clinical Decision Support: Learn about AI assisting healthcare professionals wi
 ## News
 -  <strong>[April. 2024]</strong> My team and I won first place in the 2024 College of Computer Science and Technology International Students Hackathon at Zhejiang Normal University (ZJNU).
 
--  <strong>[August. 2024]</strong> Paper title: "ESMA-IOMT: Efficient and Secure Mutual Authentication in IoMT with RLWE-Based Encryption and Boneh-Boney Signatures"  has been accepted at the 2IEEE HealthCom International Conference on E-health Networking, Application & Services(HEALTHCOM), 2024 (Nara, Japan).
+-  <strong>[August. 2024]</strong> Paper title: "ESMA-IOMT: Efficient and Secure Mutual Authentication in IoMT with RLWE-Based Encryption and Boneh-Boney Signatures"  has been accepted at the IEEE International Conference on E-health Networking, Application & Services(HEALTHCOM), 2024 (Nara, Japan).
 
 
 {% include_relative _includes/publications.md %}
