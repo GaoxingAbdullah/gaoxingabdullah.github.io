@@ -4,13 +4,11 @@ layout: homepage
 
 ## About Me
 
-I am a final year Master's student in Software Engineering at Zhejiang Normal University, 
+I am a final year Master's student in Software Engineering at Zhejiang Normal University (ZJNU), 
  where I have the privilege of being mentored and guided by Professor Wang (Robert) Hui. 
 Prior to pursuing my Master's degree, I obtained my Bachelor's in Computer Science 
 from the same university.
-
-Throughout my academic journey, I have gained invaluable experience, including an internship at China Unicom (Jinhua Branch) as a Software Engineer, where 
-I worked under the supervision of Mr. Cao Jing. Additionally, I'm currently serving as a 
+I'm currently serving as a 
 gruduate researcher at the UbiSmart Lab, ZJNU, focusing on AI for Healthcare and 
 Internet of Medical Things (IoMT) under the mentorship of Professor Ma Maode and Professor Wang Hui.
 
