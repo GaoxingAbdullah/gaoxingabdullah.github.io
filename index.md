@@ -25,9 +25,11 @@ Clinical Decision Support: Learn about AI assisting healthcare professionals wi
 
 
 ## News
-- <strong>[October, 2024]</strong> I was appointed as the Teaching Assistant (TA) for the course "Linear Algeria -  2024 Fall Undergraduate" at Zhejiang Normal University (ZJNU).
+-- <strong>[November, 2024]</strong> I was honored to presented our paper titled "ESMA-IOMT: Efficient and Secure Mutual Authentication in IoMT with RLWE-Based Encryption and Boneh-Boney Signatures" at the IEEE International Conference on E-health Networking, Application & Services(HEALTHCOM), 2024 (Nara, Japan).
 
-- <strong>[October. 2024]</Strong> I was invited as panel speaker at  Youth in AI Series: The Role of AI in Transforming Healthcare. Recording available [here](https://youtu.be/pj58uSJiPW8).
+- <strong>[October, 2024]</strong> I was appointed as the Teaching Assistant (TA) for the course "Linear Algeria - Fall 2024" undergraduate course at Zhejiang Normal University (ZJNU).
+
+- <strong>[October. 2024]</Strong> I was invited as a panel speaker at  Youth in AI Series: The Role of AI in Transforming Healthcare. Recording available [here](https://youtu.be/pj58uSJiPW8).
 
 -  <strong>[August. 2024]</strong> Paper title: "ESMA-IOMT: Efficient and Secure Mutual Authentication in IoMT with RLWE-Based Encryption and Boneh-Boney Signatures"  has been accepted at the IEEE International Conference on E-health Networking, Application & Services(HEALTHCOM), 2024 (Nara, Japan).
 
