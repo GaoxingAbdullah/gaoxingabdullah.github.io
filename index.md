@@ -9,22 +9,26 @@ I am a final year Master's student in Software Engineering at Zhejiang Normal Un
 Prior to pursuing my Master's degree, I obtained my Bachelor's in Computer Science 
 from the same university.
 I'm currently serving as a 
-gruduate researcher at the UbiSmart Lab, ZJNU, focusing on AI for Healthcare and 
+gruduate researcher at the UbiSmart Lab, ZJNU, focusing on federated learning, privacy and security, and 
 Internet of Medical Things (IoMT) under the mentorship of Professor Ma Maode and Professor Wang Hui.
 
 
 ## Research Interests
 
-- **IoMT:** AI for Internet of Medical Things 
-- **AI for Healthcare:** Predictive Modeling: Understand how AI can predict disease risks, patient outcomes, and resource needs.
-Clinical Decision Support: Learn about AI assisting healthcare professionals with diagnosis, treatment selection, and patient management.
+- **AI for Cybersecurity**
 - **Federated Learning** 
 - **Internet of Things**
-- **Security and Privacy in IoMT**
+- **Security and Privacy**
 - **Cyber Physical Systems**
+- **Internet of Medical Things**
+- **AI for Healthcare:** 
 
 
 ## News
+
+
+- <strong>[April, 2025]</strong> Our paper titled ""QRMA-IOMT: Quantum-Resilient Mutual Authentication for IoMT Using RLWE and Boneh-Boney Signature" has been accepted at the Journal of Peer-to-Peer Networking and Applications (Springer), 2025.
+
 - <strong>[November, 2024]</strong> I was honored to presented our paper titled "ESMA-IOMT: Efficient and Secure Mutual Authentication in IoMT with RLWE-Based Encryption and Boneh-Boney Signatures" at the IEEE International Conference on E-health Networking, Application & Services(HEALTHCOM), 2024 (Nara, Japan).
 
 - <strong>[October, 2024]</strong> I was appointed as the Teaching Assistant (TA) for the course "Linear Algeria - Fall 2024" undergraduate course at Zhejiang Normal University (ZJNU).

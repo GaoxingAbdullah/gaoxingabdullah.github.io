@@ -3,8 +3,8 @@ main:
   - title: "QRMA-IOMT: Quantum-Resilient Mutual Authentication for IoMT Using RLWE and Boneh-Boney Signature"
     authors: <strong> Abdulai Yakubu</strong>, Ma Maode, Wang Hui* (*Corresponding authors)
     conference_short: IOMT2024
-    image: ./assets/img/updated-model.png
-    notes: Under review 
+    image: ./assets/img/model.png
+    notes: accepted at Journal of Peer-to-Peer Networking and Applications (Springer), 2025.
 
   - title: "ESMA-IOMT: Efficient and Secure Mutual Authentication in IoMT with RLWE-Based Encryption and Boneh-Boney Signatures" 
     authors: <strong> Abdulai Yakubu</strong>, Ma Maode, Wang Hui* (*Corresponding authors)
@@ -15,4 +15,4 @@ main:
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     notes: presented at the IEEE HealthCom International Conference on E-health Networking, Application & Services <strong>(HEALTHCOM)</strong>, 2024.
-    image: ./assets/img/teaser_example.png
+    image: ./assets/img/conference.jpg
