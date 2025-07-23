@@ -4,13 +4,13 @@ layout: homepage
 
 ## About Me
 
-I am a final year Master's student in Software Engineering at Zhejiang Normal University (ZJNU), 
+I recently graduated with my master's degree in Software Engineering at Zhejiang Normal University (ZJNU) (2025), 
  where I have the privilege of being mentored and guided by Professor Wang (Robert) Hui. 
-Prior to pursuing my Master's degree, I obtained my Bachelor's in Computer Science 
+Prior to pursuing my master's degree, I obtained my Bachelor's in Computer Science 
 from the same university.
 I'm currently serving as a 
-gruduate researcher at the UbiSmart Lab, ZJNU, focusing on federated learning, privacy and security, and 
-Internet of Medical Things (IoMT) under the mentorship of Professor Ma Maode and Professor Wang Hui.
+gruduate researcher at the UbiSmart Lab, ZJNU, focusing on federated learning, Intenet of Things, 
+Internet of Medical Things (IoMT), and AI for security and Privacy under the mentorship of [Professor Ma Maode](http://qufaculty.qu.edu.qa/mamaode/home/) and Professor Wang Hui.
 
 
 ## Research Interests
@@ -18,10 +18,8 @@ Internet of Medical Things (IoMT) under the mentorship of Professor Ma Maode and
 - **AI for Cybersecurity**
 - **Federated Learning** 
 - **Internet of Things**
-- **Security and Privacy**
-- **Cyber Physical Systems**
 - **Internet of Medical Things**
-- **AI for Healthcare:** 
+- **AI for Healthcare** 
 
 
 ## News
