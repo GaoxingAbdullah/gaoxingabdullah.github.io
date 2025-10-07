@@ -4,18 +4,15 @@ layout: homepage
 
 ## About Me
 
-I recently graduated with my master's degree in Software Engineering at Zhejiang Normal University (ZJNU) (2025), 
- where I have the privilege of being mentored and guided by Professor Wang (Robert) Hui. 
-Prior to pursuing my master's degree, I obtained my Bachelor's in Computer Science 
-from the same university.
-I'm currently serving as a 
-gruduate researcher at the UbiSmart Lab, ZJNU, focusing on federated learning, Intenet of Things, 
-Internet of Medical Things (IoMT), and AI for security and Privacy under the mentorship of [Professor Ma Maode](http://qufaculty.qu.edu.qa/mamaode/home/) and Professor Wang Hui.
+I hold a Bachelor’s degree in Computer Science and a Master’s degree in Software Engineering from Zhejiang Normal University (ZJNU), China.
+I was fortunate to be mentored and guided by 
+[Professor Ma Maode](http://qufaculty.qu.edu.qa/mamaode/home/) and Professor Wang Hui (Robert).
 
+I also served as a Graduate Research Assistant in the UbiSmart Lab at ZJNU, where I focused on Federated Learning, the Internet of Things (IoT), the Internet of Medical Things (IoMT), and AI for Security.
 
 ## Research Interests
 
-- **AI for Cybersecurity**
+- **AI for Security**
 - **Federated Learning** 
 - **Internet of Things**
 - **Internet of Medical Things**

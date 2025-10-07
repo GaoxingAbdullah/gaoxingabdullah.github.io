@@ -1,10 +1,11 @@
 main:
 
-  - title: "QRMA-IOMT: Quantum-Resilient Mutual Authentication for IoMT Using RLWE and Boneh-Boney Signature"
+  - title: "QRMA-IOMT: Quantum-Resilient Mutual Authentication for IoMT Using RLWE and Boneh-Boney SignatureS"
     authors: <strong> Abdulai Yakubu</strong>, Ma Maode, Wang Hui* (*Corresponding authors)
     conference_short: IOMT2024
     image: ./assets/img/model.png
-    notes: accepted at Journal of Peer-to-Peer Networking and Applications (Springer), 2025.
+    pdf: https://link.springer.com/article/10.1007/s12083-025-01990-1
+    notes: Journal of Peer-to-Peer Networking and Applications (Springer), 2025.
 
   - title: "ESMA-IOMT: Efficient and Secure Mutual Authentication in IoMT with RLWE-Based Encryption and Boneh-Boney Signatures" 
     authors: <strong> Abdulai Yakubu</strong>, Ma Maode, Wang Hui* (*Corresponding authors)
