@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>What Fairness Means in Multilingual NLP | Abdulai Yakubu</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Challenges and promising directions for fairness in NLP systems that serve under-resourced languages.">
+    <meta name="keywords" content="fairness, multilingual NLP, under-resourced languages, bias">
+
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="../assets/img/favicon-dark.png" type="image/png" />
+    <link rel="icon" media="(prefers-color-scheme:light)" href="../assets/img/favicon.png" type="image/png" />
+    <script src="../assets/js/favicon-switcher.js" type="application/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">AY</span>
+          <span class="brand-text">Abdulai Yakubu</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          Menu
+        </button>
+        <nav id="primary-nav" class="nav">
+          <a href="../index.html#about">About Me</a>
+          <a href="../index.html#publications">Publications</a>
+          <a href="../index.html#news">News</a>
+          <a href="../index.html#blog">Blog</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="icon-moon"><i class="fas fa-moon"></i></span>
+          <span class="icon-sun"><i class="fas fa-sun"></i></span>
+        </button>
+      </header>
+
+      <main>
+        <article class="post">
+          <header class="post-header">
+            <a href="../index.html#blog" class="post-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+            <p class="post-meta">Oct 2025 &middot; 6 min read</p>
+            <h1>What Fairness Means in Multilingual NLP</h1>
+            <p class="post-subtitle">Challenges and promising directions for under-resourced languages.</p>
+          </header>
+
+          <div class="post-body">
+            <p>
+              Fairness in natural language processing is most often discussed through the lens of English — debiasing word embeddings, auditing sentiment classifiers, measuring toxicity filters. But what does fairness look like when the language itself is under-resourced, when there is no large benchmark, and when the communities most affected have the least say in how models are built?
+            </p>
+
+            <h2>The Resource Gap Is a Fairness Gap</h2>
+            <p>
+              Of the roughly 7,000 languages spoken worldwide, only a handful have the annotated corpora, pre-trained models, and evaluation benchmarks that modern NLP assumes. For languages like Dagbani, Twi, or Hausa — spoken by tens of millions — the tooling is either non-existent or badly adapted from high-resource pipelines.
+            </p>
+            <p>
+              This creates a compounding inequity: communities that already face structural disadvantages are the least likely to benefit from language technology, and the most likely to be harmed by systems that default to English-centric assumptions.
+            </p>
+
+            <h2>Three Dimensions of Multilingual Fairness</h2>
+
+            <h3>1. Representation fairness</h3>
+            <p>
+              Does the model <em>see</em> the language at all? Multilingual models like mBERT or XLM-R allocate capacity unevenly, with low-resource languages squeezed into a tiny fraction of the shared embedding space. Transfer learning can help, but "zero-shot cross-lingual transfer" often means "we hope English patterns generalize" — and they frequently don't.
+            </p>
+
+            <h3>2. Performance fairness</h3>
+            <p>
+              Even when a language is nominally supported, accuracy gaps can be dramatic. A named entity recognizer that achieves 92% F1 on English news text may drop to 58% on Yoruba social media. If downstream decisions — content moderation, information retrieval, health chatbots — rely on these scores, the consequences for speakers of low-resource languages are real and measurable.
+            </p>
+
+            <h3>3. Participatory fairness</h3>
+            <p>
+              Who decides what counts as "fair"? Most fairness benchmarks and evaluation frameworks are designed by English-speaking researchers at well-resourced institutions. Centering the communities who speak these languages — as annotators, evaluators, and co-researchers — is not just ethically important, it produces better systems.
+            </p>
+
+            <h2>Promising Directions</h2>
+            <p>
+              Several recent developments give me cautious optimism:
+            </p>
+            <ul>
+              <li><strong>Community-driven data collection</strong> — Projects like Masakhane have shown that speaker communities can lead corpus creation, ensuring cultural and linguistic validity from the start.</li>
+              <li><strong>Adapter-based architectures</strong> — Language adapters allow adding new languages to a multilingual model without retraining the full network, lowering both the computational and data barriers.</li>
+              <li><strong>Localized evaluation</strong> — Moving beyond machine-translated benchmarks to evaluation sets designed natively in the target language, with local annotators defining quality.</li>
+            </ul>
+
+            <h2>What I'm Working On</h2>
+            <p>
+              My current research explores how lightweight fine-tuning methods can improve NER and sentiment analysis for West African languages, particularly in noisy social-media settings. The goal is not just to close the accuracy gap but to do so in a way that respects the sociolinguistic context — code-switching patterns, tonal distinctions, and community norms around what constitutes harmful speech.
+            </p>
+            <p>
+              Fairness in multilingual NLP is not a checkbox. It is an ongoing commitment to building technology that serves everyone, not just the languages and cultures that the field finds convenient.
+            </p>
+          </div>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <p>Powered by Minimal Light, customized to pure HTML, CSS, and JavaScript.</p>
+      </footer>
+    </div>
+
+    <script src="../assets/js/scale.fix.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
