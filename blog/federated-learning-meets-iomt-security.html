@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Federated Learning Meets IoMT Security | Abdulai Yakubu</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How privacy-preserving AI can protect connected medical devices without sacrificing performance.">
+    <meta name="keywords" content="federated learning, IoMT, healthcare security, privacy-preserving AI, intrusion detection">
+
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="../assets/img/favicon-dark.png" type="image/png" />
+    <link rel="icon" media="(prefers-color-scheme:light)" href="../assets/img/favicon.png" type="image/png" />
+    <script src="../assets/js/favicon-switcher.js" type="application/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">AY</span>
+          <span class="brand-text">Abdulai Yakubu</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          Menu
+        </button>
+        <nav id="primary-nav" class="nav">
+          <a href="../index.html#about">About Me</a>
+          <a href="../index.html#publications">Publications</a>
+          <a href="../index.html#news">News</a>
+          <a href="../index.html#blog">Blog</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="icon-moon"><i class="fas fa-moon"></i></span>
+          <span class="icon-sun"><i class="fas fa-sun"></i></span>
+        </button>
+      </header>
+
+      <main>
+        <article class="post">
+          <header class="post-header">
+            <a href="../index.html#blog" class="post-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+            <p class="post-meta">Oct 2025 &middot; 7 min read</p>
+            <h1>Federated Learning Meets IoMT Security</h1>
+            <p class="post-subtitle">How privacy-preserving AI can protect connected medical devices without sacrificing performance.</p>
+          </header>
+
+          <div class="post-body">
+            <p>
+              The Internet of Medical Things (IoMT) is transforming healthcare — from wearable ECG monitors to smart infusion pumps, connected devices are generating an unprecedented volume of clinical data. But this connectivity also creates an enormous attack surface. Traditional centralised machine learning approaches to intrusion detection require pooling sensitive patient data in one location, which introduces privacy risks, regulatory hurdles, and single points of failure.
+            </p>
+            <p>
+              Federated learning (FL) offers a compelling alternative: train AI models across distributed edge devices without ever sharing raw data. In this post, I'll explore why FL is particularly well-suited to IoMT security and what challenges remain.
+            </p>
+
+            <h2>The Problem with Centralised Security Models</h2>
+            <p>
+              A hospital network might deploy hundreds of IoMT devices across departments — each generating network traffic, telemetry, and sensor readings. To build an intrusion detection system (IDS), the conventional approach is to aggregate all this data in a central server, train a classifier, and push the model back to endpoints.
+            </p>
+            <p>
+              This centralised pipeline has three critical weaknesses:
+            </p>
+            <ul>
+              <li><strong>Privacy exposure</strong> — Transferring raw patient-adjacent data to a central server risks violating HIPAA, GDPR, and other data protection regulations.</li>
+              <li><strong>Bandwidth bottleneck</strong> — IoMT devices on hospital Wi-Fi or cellular networks cannot continuously stream high-volume data without degrading clinical operations.</li>
+              <li><strong>Single point of failure</strong> — If the central server is compromised, the entire security model is exposed, along with the training data.</li>
+            </ul>
+
+            <h2>How Federated Learning Changes the Game</h2>
+            <p>
+              In a federated setting, each IoMT device (or a local edge gateway) trains a lightweight model on its own data. Only the model updates — gradients or weight deltas — are sent to a central aggregator, which combines them into a global model using algorithms like FedAvg or FedProx. The raw data never leaves the device.
+            </p>
+            <p>
+              For healthcare security, this architecture provides several advantages:
+            </p>
+            <ul>
+              <li><strong>Data stays local</strong> — Patient vitals, device logs, and network traffic remain on-premises, satisfying regulatory requirements by design.</li>
+              <li><strong>Diverse threat coverage</strong> — Each device sees different traffic patterns and attack vectors. Aggregating model updates (not data) allows the global model to learn from this diversity without exposing any single device's data.</li>
+              <li><strong>Resilience</strong> — The system can continue learning even if individual devices go offline, which is common in hospital environments where devices are mobile or intermittently connected.</li>
+            </ul>
+
+            <h2>Real Challenges in Federated IoMT Security</h2>
+
+            <h3>1. Non-IID data distributions</h3>
+            <p>
+              IoMT devices are heterogeneous — a pulse oximeter generates fundamentally different data than a network-connected MRI machine. This non-IID (non-independent and identically distributed) data makes federated aggregation harder. Standard FedAvg can diverge when local data distributions are highly skewed. Techniques like personalised federated learning and clustered aggregation are active research areas addressing this.
+            </p>
+
+            <h3>2. Adversarial participants</h3>
+            <p>
+              What if a compromised device sends poisoned model updates to the aggregator? Byzantine-robust aggregation methods — such as trimmed mean, Krum, or norm-clipping — help filter out malicious contributions, but they add computational overhead and may reduce model accuracy when the number of honest participants is small.
+            </p>
+
+            <h3>3. Communication efficiency</h3>
+            <p>
+              Even sending model updates can be expensive for resource-constrained devices. Gradient compression, quantisation, and sparse updates are essential for making FL practical on devices with limited power and bandwidth. In our experiments, applying top-k sparsification reduced communication costs by over 80% with less than 2% accuracy loss on an IoMT anomaly detection task.
+            </p>
+
+            <h3>4. Post-quantum secure aggregation</h3>
+            <p>
+              Secure aggregation protocols ensure the central server cannot inspect individual model updates, only the aggregate. Most current implementations rely on classical cryptographic primitives (Diffie-Hellman, secret sharing). As quantum threats grow, these need to be replaced with post-quantum alternatives — an area where lattice-based schemes show particular promise due to their natural support for additive homomorphism.
+            </p>
+
+            <h2>Combining FL with Post-Quantum Authentication</h2>
+            <p>
+              An interesting convergence is emerging between federated learning and post-quantum security. Before model updates can be aggregated, devices must authenticate themselves — proving they are legitimate participants and not adversaries injecting poisoned gradients. Our work on RLWE-based mutual authentication (QRMA-IOMT) fits naturally into this pipeline: each device authenticates using a quantum-resilient protocol before participating in the federated round.
+            </p>
+            <p>
+              This creates a layered defence:
+            </p>
+            <ul>
+              <li><strong>Layer 1 — Authentication:</strong> Post-quantum mutual authentication ensures only legitimate devices join the federation.</li>
+              <li><strong>Layer 2 — Secure aggregation:</strong> Lattice-based secure aggregation protects model updates during transmission.</li>
+              <li><strong>Layer 3 — Anomaly detection:</strong> The federated model itself detects intrusions and anomalies across the IoMT network.</li>
+            </ul>
+
+            <h2>Looking Ahead</h2>
+            <p>
+              Federated learning is not a silver bullet — it introduces its own complexity around convergence, fairness across devices, and trust management. But for healthcare environments where data privacy is non-negotiable and devices are distributed by nature, it's one of the most promising paradigms we have.
+            </p>
+            <p>
+              The next frontier is making these systems simultaneously privacy-preserving, communication-efficient, and quantum-resilient. That's a tall order, but the stakes — patient safety and trust — demand nothing less.
+            </p>
+          </div>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <p>Made with <i class="fas fa-heart" style="color:#e25555;"></i> by <a href="https://github.com/GaoxingAbdullah" target="_blank" rel="noopener">Abdulai Yakubu</a></p>
+      </footer>
+    </div>
+
+    <script src="../assets/js/scale.fix.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

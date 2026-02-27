@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Why Healthcare Needs Post-Quantum Cryptography Now | Abdulai Yakubu</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quantum computers aren't here yet, but the threat to patient data already is — why healthcare must adopt post-quantum cryptography today.">
+    <meta name="keywords" content="post-quantum cryptography, healthcare security, IoMT, lattice-based cryptography, RLWE">
+
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="../assets/img/favicon-dark.png" type="image/png" />
+    <link rel="icon" media="(prefers-color-scheme:light)" href="../assets/img/favicon.png" type="image/png" />
+    <script src="../assets/js/favicon-switcher.js" type="application/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">AY</span>
+          <span class="brand-text">Abdulai Yakubu</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          Menu
+        </button>
+        <nav id="primary-nav" class="nav">
+          <a href="../index.html#about">About Me</a>
+          <a href="../index.html#publications">Publications</a>
+          <a href="../index.html#news">News</a>
+          <a href="../index.html#blog">Blog</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="icon-moon"><i class="fas fa-moon"></i></span>
+          <span class="icon-sun"><i class="fas fa-sun"></i></span>
+        </button>
+      </header>
+
+      <main>
+        <article class="post">
+          <header class="post-header">
+            <a href="../index.html#blog" class="post-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+            <p class="post-meta">Jan 2026 &middot; 6 min read</p>
+            <h1>Why Healthcare Needs Post-Quantum Cryptography Now</h1>
+            <p class="post-subtitle">Quantum computers aren't here yet, but the threat to patient data already is.</p>
+          </header>
+
+          <div class="post-body">
+            <p>
+              Healthcare is one of the most data-sensitive sectors in the world. Electronic health records (EHRs), medical imaging, genomic data — all of it is protected by cryptographic protocols that were designed for a pre-quantum era. The uncomfortable truth is that adversaries don't need a quantum computer <em>today</em> to exploit this. They just need to collect encrypted data now and decrypt it later — a strategy known as "harvest now, decrypt later."
+            </p>
+
+            <h2>The Quantum Threat to Healthcare</h2>
+            <p>
+              Most healthcare communication protocols rely on RSA or elliptic-curve cryptography (ECC) for key exchange and digital signatures. Both are vulnerable to Shor's algorithm, which a sufficiently powerful quantum computer could use to factor large integers or compute discrete logarithms in polynomial time.
+            </p>
+            <p>
+              For a typical web session, this might seem abstract. But healthcare data has a uniquely long shelf life — a patient's genetic information is relevant for their entire lifetime, and medical records must often be retained for decades. Data encrypted today with RSA-2048 could be decrypted within the next 10–15 years if quantum computing progresses as projected.
+            </p>
+
+            <h2>Why the Internet of Medical Things Makes It Worse</h2>
+            <p>
+              The Internet of Medical Things (IoMT) amplifies the problem. Connected pacemakers, insulin pumps, remote patient monitors, and hospital sensors generate continuous streams of sensitive data. These devices are often resource-constrained — limited CPU, memory, and battery — making it harder to deploy heavyweight cryptographic solutions.
+            </p>
+            <p>
+              Traditional public-key infrastructure (PKI) already strains many IoMT devices. Migrating to post-quantum schemes, which typically have larger key sizes and ciphertexts, requires careful protocol design to avoid breaking real-time performance guarantees that patient safety depends on.
+            </p>
+
+            <h2>Lattice-Based Cryptography: A Practical Path Forward</h2>
+            <p>
+              Among the families of post-quantum cryptographic primitives — lattice-based, code-based, hash-based, and multivariate — lattice-based constructions stand out for healthcare applications. Schemes based on the Ring Learning with Errors (RLWE) problem offer:
+            </p>
+            <ul>
+              <li><strong>Smaller key sizes</strong> compared to other post-quantum families, making them more feasible for constrained IoMT devices.</li>
+              <li><strong>Efficient arithmetic</strong> — polynomial multiplication over rings can be accelerated with Number Theoretic Transforms (NTT).</li>
+              <li><strong>Versatility</strong> — RLWE supports both encryption and digital signatures, enabling unified authentication frameworks.</li>
+            </ul>
+            <p>
+              In our recent work on QRMA-IOMT, we demonstrated that RLWE-based mutual authentication can be performed on IoMT-class devices with acceptable latency, while providing security guarantees against both classical and quantum adversaries.
+            </p>
+
+            <h2>The Migration Challenge</h2>
+            <p>
+              Adopting post-quantum cryptography in healthcare isn't just a technical problem — it's an ecosystem problem. Hospitals run legacy systems, regulatory frameworks (HIPAA, GDPR) assume specific cryptographic baselines, and interoperability between devices from dozens of manufacturers must be maintained.
+            </p>
+            <p>
+              A pragmatic approach is <strong>crypto-agility</strong>: designing systems that can switch between classical and post-quantum algorithms without major architectural changes. Hybrid schemes — where a classical and a post-quantum algorithm run in parallel — provide a safety net during the transition period.
+            </p>
+
+            <h2>What Should Researchers Focus On?</h2>
+            <p>
+              Three areas need urgent attention:
+            </p>
+            <ul>
+              <li><strong>Lightweight protocol design</strong> — Optimising post-quantum handshakes for devices with &lt;256 KB of RAM.</li>
+              <li><strong>Formal security proofs</strong> — Ensuring that protocol compositions (authentication + key exchange + data transfer) remain secure under quantum threat models.</li>
+              <li><strong>Real-world benchmarking</strong> — Moving beyond theoretical analysis to measure energy consumption, latency, and throughput on actual medical hardware.</li>
+            </ul>
+
+            <h2>Final Thoughts</h2>
+            <p>
+              The quantum threat to healthcare is not hypothetical — it's a matter of timing. The data being transmitted by IoMT devices today will still be sensitive when large-scale quantum computers arrive. Starting the migration to post-quantum cryptography now is not premature; it's responsible. The cost of waiting is measured in patient privacy and trust.
+            </p>
+          </div>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <p>Made with <i class="fas fa-heart" style="color:#e25555;"></i> by <a href="https://github.com/GaoxingAbdullah" target="_blank" rel="noopener">Abdulai Yakubu</a></p>
+      </footer>
+    </div>
+
+    <script src="../assets/js/scale.fix.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
