@@ -240,11 +240,132 @@ main {
   transform: translateY(0);
 }
 
-.about-grid {
+.profile-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr);
+  grid-template-columns: minmax(190px, 260px) minmax(0, 1fr);
   gap: clamp(28px, 5vw, 60px);
+  align-items: start;
+}
+
+.profile-sidebar {
+  min-width: 0;
+  text-align: center;
+}
+
+.profile-photo {
+  width: min(100%, 172px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 24%;
+  border: 3px solid var(--card);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  margin: 0 auto 16px;
+}
+
+.profile-sidebar h1 {
+  font-size: 2.35rem;
+  line-height: 1.12;
+  margin: 0 0 12px;
+}
+
+.profile-role {
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.profile-affiliation {
+  margin: 0;
+}
+
+.profile-sidebar .social-icons {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.profile-content {
+  min-width: 0;
+  display: grid;
+  gap: 34px;
+}
+
+.profile-heading {
+  display: flex;
   align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.profile-heading h2 {
+  margin: 0;
+}
+
+.profile-heading-icon,
+.education-icon {
+  display: inline-flex;
+  flex: 0 0 40px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  color: var(--accent);
+}
+
+.profile-summary > p {
+  margin-bottom: 16px;
+}
+
+.profile-summary .about-meta {
+  margin-bottom: 0;
+}
+
+.profile-summary .cta-row {
+  margin: 20px 0 0;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 14px;
+}
+
+.education-card {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  padding: 18px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.education-icon {
+  border: 1px solid var(--line);
+}
+
+.education-card h3 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  margin: 0 0 8px;
+}
+
+.education-card p {
+  font-size: 0.92rem;
+  margin: 0 0 6px;
+}
+
+.education-card .education-date {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .eyebrow {
@@ -364,29 +485,6 @@ p {
 .social-icons a:hover {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 10px 26px rgba(27, 27, 29, 0.14);
-}
-
-.about-photo {
-  width: min(100%, 300px);
-  padding: 8px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--card);
-  box-shadow: var(--shadow);
-  margin-left: auto;
-}
-
-.about-photo img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center 24%;
-  border-radius: 4px;
-}
-
-.about-photo .social-icons {
-  justify-content: center;
-  margin-top: 16px;
 }
 
 .section-header {
@@ -793,13 +891,22 @@ p {
     font-size: 1.75rem;
   }
 
-  .about-grid {
+  .profile-layout {
     grid-template-columns: 1fr;
+    gap: 36px;
   }
 
-  .about-photo {
-    width: min(100%, 220px);
+  .profile-sidebar {
+    max-width: 360px;
     margin: 0 auto;
+  }
+
+  .profile-photo {
+    width: 148px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
   }
 
   .cards {

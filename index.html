@@ -38,6 +38,7 @@
         </button>
         <nav id="primary-nav" class="nav">
           <a href="#about">About</a>
+          <a href="#education">Education</a>
           <a href="#news">News</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
@@ -52,21 +53,12 @@
 
       <main>
         <section id="about" class="section about">
-          <div class="about-grid">
-            <div class="about-text">
+          <div class="profile-layout">
+            <aside class="profile-sidebar">
+              <img class="profile-photo" src="./assets/img/avatar.jpg" alt="Portrait of Abdulai Yakubu" />
               <h1>Abdulai Yakubu</h1>
-              <p class="">PhD in Computer Science Student</p>
-              <p>
-                I am doing my PhD in Computer Science and Technology at Nanjing University of Science and Technology.
-                My research focuses on AI security, privacy and security in IoT/IoMT, agentic security in IoT/IoMT,
-                federated learning, and post-quantum security.
-              <div class="about-meta">
-                <span class="about-link"><a href="https://www.njust.edu.cn/" target="_blank" rel="noopener noreferrer">Nanjing University of Science and Technology</a></span> 
-                </br><span class="about-email">a.yakubu (at) zjnu.edu.cn</span>
-              </div>
-            </div>
-            <div class="about-photo">
-              <img src="./assets/img/avatar.jpg" alt="Portrait of Abdulai Yakubu" />
+              <p class="profile-role">PhD in Computer Science Student</p>
+              <p class="profile-affiliation">Nanjing University of Science and Technology</p>
               <div class="social-icons">
                 <a href="https://github.com/GaoxingAbdullah" aria-label="GitHub">
                   <i class="fab fa-github"></i>
@@ -77,9 +69,50 @@
                 <a href="https://instagram.com/abdullah_yak" aria-label="Instagram">
                   <i class="fab fa-instagram"></i>
                 </a>
-               
               </div>
-
+            </aside>
+            <div class="profile-content">
+              <section class="profile-summary" aria-labelledby="summary-heading">
+                <div class="profile-heading">
+                  <span class="profile-heading-icon"><i class="fas fa-user"></i></span>
+                  <h2 id="summary-heading">Professional Summary</h2>
+                </div>
+                <p>
+                  I am doing my PhD in Computer Science and Technology at Nanjing University of Science and Technology.
+                  My research focuses on AI security, privacy and security in IoT/IoMT, agentic security in IoT/IoMT,
+                  federated learning, and post-quantum security.
+                </p>
+                <div class="about-meta">
+                  <span class="about-email">a.yakubu (at) zjnu.edu.cn</span>
+                </div>
+                <div class="cta-row">
+                  <a class="cta" href="https://gaoxingabdullah.github.io/assets/files/ABDULAI_YAKUBU_CV.pdf">Download CV</a>
+                </div>
+              </section>
+              <section id="education" class="profile-education" aria-labelledby="education-heading">
+                <div class="profile-heading">
+                  <span class="profile-heading-icon"><i class="fas fa-graduation-cap"></i></span>
+                  <h2 id="education-heading">Education</h2>
+                </div>
+                <div class="education-grid">
+                  <article class="education-card">
+                    <span class="education-icon"><i class="fas fa-graduation-cap"></i></span>
+                    <div>
+                      <h3>PhD in Computer Science and Technology</h3>
+                      <p>Nanjing University of Science and Technology</p>
+                      <p class="education-date">Sep 2026 - present</p>
+                    </div>
+                  </article>
+                  <article class="education-card">
+                    <span class="education-icon"><i class="fas fa-graduation-cap"></i></span>
+                    <div>
+                      <h3>Master in Software Engineering</h3>
+                      <p>Zhejiang Normal University</p>
+                      <p class="education-date">Sep 2022 - Jun 2025</p>
+                    </div>
+                  </article>
+                </div>
+              </section>
             </div>
           </div>
         </section>
